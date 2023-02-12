@@ -36,7 +36,134 @@
 	<target id="haxe" tool="linker" if="iphoneos">
 		<lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/libvlc.a" if="HXCPP_ARM64" />
 		<lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/libvlccore.a" if="HXCPP_ARM64" />
-	</target>
+        <!--aarch64-->
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/aarch64/libdeinterlace_aarch64_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/aarch64/libdeinterlace_sve_plugin.a" if="HXCPP_ARM64" /> 
+         <!--access--> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libaccess_concat_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libaccess_imem_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libaccess_mms_plugin.a" if="HXCPP_ARM64" />
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libamt_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libavio_plugin.a" if="HXCPP_ARM64" />
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libdata_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libdsm_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libfilesystem_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libftp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libgopher_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libhttp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libhttps_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libidummy_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libimem_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/liblive555_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libnfs_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/librist_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/librtp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libsatip_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libsdp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libsftp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libsmb2_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libtcp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libtimecode_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libudp_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/libvdr_plugin.a" if="HXCPP_ARM64" /> 
+         <!--rtp-->  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_ac3_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_h264_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_mpeg12_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_opus_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_pcm_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_raw_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access/rtp/librtp_xiph_plugin.a" if="HXCPP_ARM64" /> 
+         <!--access output-->  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access_output/libaccess_http_put_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access_output/libaccess_output_dummy_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access_output/libaccess_output_file_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access_output/libaccess_output_http_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access_output/libaccess_output_rist_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/access_output/libaccess_output_shout_plugin.a" if="HXCPP_ARM64" /> 
+         <!--audio filter--> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libaudio_format_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libcenter_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libchorus_flanger_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libcompressor_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libdolby_surround_decoder_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libebur128_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libequalizer_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libgain_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libkaraoke_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libmono_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libnormvol_plugin.a" if="HXCPP_ARM64" />
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libparam_eq_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/librnnoise_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libscaletempo_pitch_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libscaletempo_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libsimple_channel_mixer_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libsoxr_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libspatialaudio_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libspatializer_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libstereo_widen_plugin.a" if="HXCPP_ARM64" />
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libstereopan_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libtospdif_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libtrivial_channel_mixer_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_filter/libugly_resampler_plugin.a" if="HXCPP_ARM64" /> 
+         <!--audio mixer--> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_mixer/libfloat_mixer_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_mixer/libinteger_mixer_plugin.a" if="HXCPP_ARM64" />  
+         <!--audio output-->  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_output/libadummy_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_output/libafile_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_output/libamem_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/audio_output/libaudiounit_ios_plugin.a" if="HXCPP_ARM64" /> 
+         <!--codec--> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libadpcm_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libaes3_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libaraw_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libaribcaption_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libaudiotoolboxmidi_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libavcodec_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libcc_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libcdg_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libcvdsub_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libdav1d_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libddummy_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libdvbsub_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libedummy_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libflac_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libg711_plugin.a" if="HXCPP_ARM64" />  
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/liblibass_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/liblpcm_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libmpg123_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/liboggspots_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libopus_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libpng_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/librawvideo_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/librtp_rawvid_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/librtpvideo_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libscte18_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libscte27_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libspdif_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libspeex_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libspudec_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libstl_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libsubsdec_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libsubstx3g_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libsubsusf_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libsvcdsub_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libtelx_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libtextst_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libtheora_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libttml_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libtwolame_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libuleaddvaudio_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libvideotoolbox_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libvorbis_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libvpx_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libwebvtt_plugin.a" if="HXCPP_ARM64" /> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/codec/libzvbi_plugin.a" if="HXCPP_ARM64" />
+         <!--control--> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/control/libdummy_plugin.a" if="HXCPP_ARM64" /> 
+         <!--demux--> 
+         <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/demux/libadaptive_plugin.a" if="HXCPP_ARM64" /> 
          <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/demux/libaiff_plugin.a" if="HXCPP_ARM64" /> 
          <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/demux/libasf_plugin.a" if="HXCPP_ARM64" /> 
          <lib name="${haxelib:hxcodecpro}/thirdparty/ndll/iOS/plugins/demux/libau_plugin.a" if="HXCPP_ARM64" /> 
