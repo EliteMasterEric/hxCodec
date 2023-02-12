@@ -91,4 +91,4 @@ hxCodec, when used on desktop platforms, links with code from VLC, which is made
 - [datee](https://github.com/datee) - Creator of HaxeVLC.
 - [Erizur](https://github.com/Erizur) - Linux support.
 - [BushTrain460615](https://github.com/BushTrain460615) - macOS Support (v2)
-- [Jonnycat] (https://github.com/JonnycatMeow) - Mac Support (v3)
+- [Jonnycat](https://github.com/JonnycatMeow) - Mac Support & Iphone Support (v3)
