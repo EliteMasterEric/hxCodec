@@ -41,6 +41,11 @@ All third-party headers and library files go in this folder to ensure explicit d
         - `./jni/<ARCH>/libc++_shared.so` 
         - `./jni/<ARCH>/libvlc.so`
         - `./jni/<ARCH>/libvlcjni.so`
+    - Rename them and move them to the `ndll` folder:
+        - Move the `arm64-v8a` files to `ndll/Android/NAME-64.so`
+        - Move the `armeabi-v7a` files to `ndll/Android/NAME-v7.so`
+        - Move the `x86` files to `ndll/Android/NAME-x86.so`
+        - Move the `x86_64` files to `ndll/Android/NAME-x86_64.so`
 - iOS: TODO
     - Something to do with VLCKit? https://code.videolan.org/videolan/VLCKit#build
 
