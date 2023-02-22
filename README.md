@@ -8,7 +8,7 @@
 hxCodec is a library for [Haxe](https://haxe.org/) which provides utilities for audio and video, including:
 
 - Audio and video playback with every imaginable codec, for frameworks such as OpenFL and HaxeFlixel.
-- Support for Windows, Mac, Linux, HTML5, and mobile.
+- Support for Windows, Mac, Linux, HTML5, and Mobile.
 - Efficient playback with features like streaming and hardware decoding.
 
 hxCodec is powered by [libVLC](https://www.videolan.org/vlc/libvlc.html).
@@ -17,7 +17,7 @@ hxCodec is powered by [libVLC](https://www.videolan.org/vlc/libvlc.html).
 
 Install `hxCodec` via Haxelib:
 
-```
+```bash
 haxelib install hxcodec
 ```
 
@@ -29,7 +29,7 @@ If you're an FNF modder, here's a little section of the docs just for you! Skip 
 
 To play a cutscene between levels, add this to your PlayState:
 
-```
+```hx
 import hxcodec.flixel.FlxCutsceneState;
 
 ...
@@ -45,7 +45,7 @@ FlxCutscene.playCutscene(Paths.file('videos/myCutscene.mp4'), new PlayState());
 
 If you're using HaxeFlixel, the easiest way to play a cutscene is to use the provided `FlxCutsceneState`:
 
-```
+```hx
 import hxcodec.flixel.FlxCutsceneState;
 
 ...
@@ -64,7 +64,7 @@ If you want more control over video playback, you can do any of these:
 
 If you're using OpenFL, use `hxcodec.openfl.VideoSprite`:
 
-```
+```hx
 var video:Sprite = new VideoSprite();
 addChild(video);
 
@@ -75,8 +75,7 @@ video.playVideo(videoPath);
 
 ## Advanced Usage
 
-- Follow this guide to cross-compile libvlc.dll:
-    - https://code.videolan.org/videolan/vlc/-/blob/master/doc/BUILD-win32.md
+- Follow this guide to cross-compile [libvlc.dll](https://code.videolan.org/videolan/vlc/-/blob/master/doc/BUILD-win32.md).
 
 ## Licensing
 
